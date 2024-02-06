@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.top {
+    display: flex;
+    padding: 0.5%;
+    box-sizing: border-box;
+}
+
+
+.top .left {
+    flex: 0.1;
+
+}
+.top .center {
+    flex: 1;
+ 
+}
+.top .right {
+    flex: 0.19;
+    
+}
+
+.middle {
+    display: flex;
+    height: calc(100vh - 5px); 
+}
+
+.middle .left {
+    flex: 0.1;
+    
+}
+
+.middle .center {
+    flex: 1;
+    
+}
+
+.middle .right {
+    flex: 0.22;
+    
+}
+
+
+
+.middle div {
+    border: 1px solid black;
+}
+.center-top {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center-top .sub_foros {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.center-top .sub_foros li {
+    flex-grow: 1;
+    border: 1px solid #000; 
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+.center-top .sub_foros li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+}
+.top .left button{
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+}
+.top .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+   
+}
+.right button {
+    width: 18%; 
+    height: 100%; 
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
