@@ -8,17 +8,32 @@
     <meta name="theme-color" content="#09f">
 </head>
 <body>
-<div class="top">
-    <div class="left"><button></button></div>
-    <div class="center">
-        <h1>Ejemplo</h1>
+    <div class="top">
+        <div class="logo">
+            <h1>Uconnect</h1>
+        </div>
+        <div class="menu">
+            <button class="menu-btn">☰</button>
+            <ul class="menu-dropdown">
+                <li><a href="#" onclick="changeContentMain()">Inicio</a></li>
+                <li><a href="#" onclick="changeContentFood()">Alimentos</a></li>
+                <li><a href="#" onclick="changeContentJobs()">Empleos</a></li>
+                <!-- Agrega más opciones de menú según sea necesario -->
+            </ul>
+        </div>
+        <div class="search">
+            <form class="search-form">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="actions">
+            <button class="notifications">Notificaciones</button>
+            <button class="msg">Mensajes</button>
+            <button class="profile">Perfil</button>
+        </div>
     </div>
-    <div class="right">
-        <button class="notifications"></button>
-        <button class="msg"></button>
-        <button class="profile"></button>
-    </div>
-</div>
+    
 <div class="middle">
     <div class="left">
         <nav>

@@ -6,59 +6,49 @@
 
 .top {
     display: flex;
-    padding: 0.5%;
-    box-sizing: border-box;
-}
-
-
-.top .left {
-    flex: 0.1;
-
-}
-.top .center {
-    flex: 1;
- 
-}
-.top .right {
-    flex: 0.19;
-    
-}
-
-.middle {
-    display: flex;
-    height: calc(100vh - 5px); 
-}
-
-.middle .left {
     align-items: center;
-    flex-direction: row;
-    flex: 0.1;
+    justify-content: space-between;
+    background-color: #09f;
+    padding: 10px;
+    color: #fff;
+}
+
+.left {
     display: flex;
-    justify-content:space-evenly;
-    
+    align-items: center;
 }
 
-.middle .left img{
-    width: 5vw;
-    height: 10vh;
-    padding-bottom: 80%;
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
 }
 
-.middle .center {
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #09f;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-dropdown li {
+    padding: 10px;
+}
+
+.menu-dropdown li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.center {
     flex: 1;
-    
 }
 
-.middle .right {
-    flex: 0.22;
-    
-}
-
-
-
-.middle div {
-    border: 1px solid black;
-}
 .center-top {
     width: 100%;
     padding: 0;
@@ -88,30 +78,61 @@
     text-decoration: none;
     color: #000;
 }
-.top .left button{
-    background-color: white;
-    width: 30%;
-    height: 100%;
-    cursor: pointer;
-}
-.top .center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.top .right {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    
-   
-}
 .right button {
     width: 14%; 
     height: 100%; 
     border-radius: 100%;
     background-color: white;
     cursor: pointer;
-    
 }
+
+.middle {
+    display: flex;
+    height: calc(100vh - 5px); 
+}
+
+.middle .left {
+    align-items: center;
+    flex-direction: row;
+    flex: 0.1;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.middle .left img {
+    width: 5vw;
+    height: 10vh;
+    padding-bottom: 80%;
+}
+
+.middle .center {
+    flex: 1;
+}
+
+.middle .right {
+    flex: 0.22;
+}
+
+.middle div {
+    border: 1px solid black;
+}
+
+.top .center form {
+    display: flex;
+    align-items: center;
+}
+
+.top .center form input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.top .center form button[type="submit"] {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Agrega más estilos según sea necesario */
