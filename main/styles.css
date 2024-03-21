@@ -1,138 +1,187 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 
 .top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #09f;
-    padding: 10px;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px; /* Add padding as needed */
+  background-color: #206083; /* Or any color you prefer */
+}
+
+/* This will style the university logo image */
+.UniLogo img {
+  max-width: 18%; /* Adjust the size as needed */
+  max-height: 18%; /* Maintain aspect ratio */
+  padding: 1% 0% 1% 7%;
+  display: block; /* Remove any extra space beneath the image */
+  border: none; /* If there's a border applied by default, this will remove it */
+}
+
+/* This will style the main logo or 'home button' in the middle */
+.logo img {
+  max-width: 70%; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* This will style the action buttons' images */
+/* Styles for the notifications button */
+#notificationsButton img {
+  width: 30%; /* Or any other size */
+  height: 90%;
+  /* Other styles as needed */
+}
+
+/* Styles for the messages button */
+#messagesButton img {
+  width: 30%;
+  height: 90%;
+  /* Other styles as needed */
+}
+
+/* Styles for the profile button */
+#profileButton img {
+  width: 20%;
+  height: 90%;
+  /* Other styles as needed */
+}
+
+/* Remove default button styling */
+.top button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.logo {
+  flex-grow: 1;
+  text-align: center;
 }
 
 .left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px; /* Add padding as needed */
+  background-color: #82B3B5; /* Or any color you prefer */
 }
 
 .menu-btn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #fff;
-    cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
 }
 
 .menu-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #09f;
-    list-style: none;
-    padding: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #09f;
+  list-style: none;
+  padding: 0;
 }
 
 .menu-dropdown li {
-    padding: 10px;
+  padding: 10px;
 }
 
 .menu-dropdown li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .center {
-    flex: 1;
+  flex: 1;
 }
 
 .center-top {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .center-top .sub_foros {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .center-top .sub_foros li {
-    flex-grow: 1;
-    border: 1px solid #000; 
-    box-sizing: border-box;
-    text-align: center; 
+  flex-grow: 1;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .center-top .sub_foros li a {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    color: #000;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
 }
 
 .right button {
-    width: 14%; 
-    height: 100%; 
-    border-radius: 100%;
-    background-color: white;
-    cursor: pointer;
+  width: 14%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: white;
+  cursor: pointer;
 }
 
 .middle {
-    display: flex;
-    height: calc(100vh - 5px); 
+  display: flex;
+  height: calc(100vh - 5px);
 }
 
 .middle .left {
-    align-items: center;
-    flex-direction: row;
-    flex: 0.1;
-    display: flex;
-    justify-content:space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex: 0.1;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .middle .left img {
-    width: 5vw;
-    height: 10vh;
-    padding-bottom: 80%;
+  width: 5vw;
+  height: 10vh;
+  padding-bottom: 80%;
 }
 
 .middle .center {
-    flex: 1;
+  flex: 1;
 }
 
 .middle .right {
-    flex: 0.22;
+  flex: 0.22;
 }
 
 .middle div {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .top .center form {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .top .center form input[type="text"] {
-    padding: 5px;
-    margin-right: 5px;
+  padding: 5px;
+  margin-right: 5px;
 }
 
 .top .center form button[type="submit"] {
-    padding: 5px 10px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
+  padding: 5px 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
-
-/* Agrega más estilos según sea necesario */
